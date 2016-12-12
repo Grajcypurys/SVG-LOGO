@@ -1,0 +1,15 @@
+.path {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  animation: dash 2s ease-out forwards;
+}
+.svg2{
+    width: 300px;
+    height: 300px;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
