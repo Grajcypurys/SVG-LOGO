@@ -1,14 +1,29 @@
+h1{
+    text-decoration: underline;
+}
 .path {
-  stroke-dasharray: 1400;
-  stroke-dashoffset: 1400;
-  animation: dash 2s ease-out forwards;
+    
+}
+.path1{
+    stroke-dasharray: 1400;
+    stroke-dashoffset: 1400;
+    animation: dash 2s ease-in forwards;
+}
+.path2{
+    stroke-dasharray: 50;
+    stroke-dashoffset: 400;
+    animation: dash 2s linear forwards infinite;
 }
 .svg2{
     width: 300px;
     height: 300px;
 }
-
 @keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes move {
   to {
     stroke-dashoffset: 0;
   }
